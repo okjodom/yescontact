@@ -1,0 +1,36 @@
+{
+  "name": "react-yescontact",
+  "version": "0.2.1",
+  "description": "This is an embeddable Nostr 'Contact Us' widget that just works",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "scripts": {
+    "build": "node build.js",
+    "embeddable-debug": "esbuild --bundle embeddable/embed.jsx --outfile=embeddable/embed.js --sourcemap",
+    "embeddable": "esbuild --bundle embeddable/embed.jsx --outfile=embeddable/embed.js --minify"
+  },
+  "author": "okjodom",
+  "license": "MIT",
+  "repository": "https://github.com/okjodom/yescontact",
+  "dependencies": {
+    "dayjs": "^1.11.6",
+    "esbuild": "^0.17.0",
+    "nostr-tools": "1.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.6",
+    "use-debounce": "^8.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "^2.5.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
